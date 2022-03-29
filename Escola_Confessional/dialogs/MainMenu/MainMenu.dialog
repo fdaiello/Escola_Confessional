@@ -64,6 +64,14 @@
               "dialog": "Cadastro"
             }
           ]
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "jFuQAV"
+          },
+          "property": "user.atendimento",
+          "value": "sim"
         }
       ]
     }
