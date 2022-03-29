@@ -1,0 +1,8 @@
+{
+  "$kind": "Microsoft.LuisRecognizer",
+  "id": "LUIS_Escola_Confessional",
+  "applicationId": "=settings.luis.Escola_Confessional_en_us_lu.appId",
+  "version": "=settings.luis.Escola_Confessional_en_us_lu.version",
+  "endpoint": "=settings.luis.endpoint",
+  "endpointKey": "=settings.luis.endpointKey"
+}

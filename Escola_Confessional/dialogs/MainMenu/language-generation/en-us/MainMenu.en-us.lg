@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# ChoiceInput_Prompt_isGL0d()
+[Activity
+    Text = ${ChoiceInput_Prompt_isGL0d_text()}
+]
+
+# ChoiceInput_Prompt_isGL0d_text()
+- Você deseja falar com qual setor?

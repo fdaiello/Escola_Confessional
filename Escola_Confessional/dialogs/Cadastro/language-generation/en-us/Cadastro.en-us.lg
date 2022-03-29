@@ -1,0 +1,38 @@
+[import](common.lg)
+
+# SendActivity_u7lbVA()
+[Activity
+    Text = ${SendActivity_u7lbVA_text()}
+]
+
+# SendActivity_u7lbVA_text()
+- ```Para que esse atendimento seja personalizado, eu precisarei de algumas 
+informações.```
+# TextInput_Prompt_egT3CS()
+[Activity
+    Text = ${TextInput_Prompt_egT3CS_text()}
+]
+
+# TextInput_Prompt_egT3CS_text()
+- Qual é o nome do aluno(a)?
+# TextInput_Prompt_N5mqv9()
+[Activity
+    Text = ${TextInput_Prompt_N5mqv9_text()}
+]
+
+# TextInput_Prompt_N5mqv9_text()
+- Qual a data de nascimento do aluno(a)?
+# TextInput_Prompt_QmyvmW()
+[Activity
+    Text = ${TextInput_Prompt_QmyvmW_text()}
+]
+
+# TextInput_Prompt_QmyvmW_text()
+- Qual é a série desejada?
+# TextInput_Prompt_Q6mS8M()
+[Activity
+    Text = ${TextInput_Prompt_Q6mS8M_text()}
+]
+
+# TextInput_Prompt_Q6mS8M_text()
+- Qual é o e-mail para enviarmos o orçamento?

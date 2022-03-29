@@ -1,0 +1,74 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "7SHEsA",
+    "name": "MainMenu",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "Mdcz9k"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "isGL0d"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_isGL0d()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or ",
+            "inlineSeparator": ", "
+          },
+          "recognizerOptions": {
+            "recognizeOrdinals": true
+          },
+          "defaultLocale": "pt-br",
+          "choices": [
+            "Comercial - quer conhecer melhor a nossa escola?",
+            "Financeiro",
+            "Cordenação",
+            "Secretaria",
+            "Departamento Pessoal",
+            "Compras"
+          ],
+          "property": "dialog.menuChoice"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "8L2x8c"
+          },
+          "condition": "=dialog.menuChoice==\"Comercial - quer conhecer melhor a nossa escola?\"",
+          "actions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "wdD7UP"
+              },
+              "activityProcessed": true,
+              "dialog": "Cadastro"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "MainMenu.lg",
+  "recognizer": "MainMenu.lu.qna",
+  "id": "MainMenu"
+}

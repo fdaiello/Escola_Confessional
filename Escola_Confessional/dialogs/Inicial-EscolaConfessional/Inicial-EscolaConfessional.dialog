@@ -1,0 +1,86 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "cHIszw",
+    "name": "Inicial-EscolaConfessional",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "ygE5wj"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "RKnq6a"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "prompt": "${TextInput_Prompt_RKnq6a()}",
+          "property": "user.name"
+        },
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "Ifrx02"
+          },
+          "activity": "${SendActivity_Ifrx02()}"
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "uokc4x"
+          },
+          "activityProcessed": true,
+          "dialog": "MainMenu"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "fAIC07",
+        "name": "Cancelar"
+      },
+      "intent": "Cancelar",
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "doAhNY"
+          },
+          "activity": "${SendActivity_doAhNY()}"
+        },
+        {
+          "$kind": "Microsoft.CancelAllDialogs",
+          "$designer": {
+            "id": "o7Ysqf"
+          },
+          "activityProcessed": true
+        }
+      ]
+    }
+  ],
+  "generator": "Inicial-EscolaConfessional.lg",
+  "recognizer": {
+    "$kind": "Microsoft.RegexRecognizer",
+    "intents": [
+      {
+        "intent": "Cancelar",
+        "pattern": "sair|cancelar|voltar"
+      }
+    ]
+  },
+  "id": "Inicial-EscolaConfessional"
+}

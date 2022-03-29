@@ -1,0 +1,88 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "TN0TAl",
+    "name": "Cadastro",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "UiXgL8"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "u7lbVA"
+          },
+          "activity": "${SendActivity_u7lbVA()}"
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "egT3CS"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": true,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "prompt": "${TextInput_Prompt_egT3CS()}",
+          "property": "user.nomedoaluno"
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "N5mqv9"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": true,
+          "prompt": "${TextInput_Prompt_N5mqv9()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "property": "user.dtnascimento"
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "QmyvmW"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": true,
+          "prompt": "${TextInput_Prompt_QmyvmW()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "property": "user.serie"
+        },
+        {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "Q6mS8M"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": true,
+          "prompt": "${TextInput_Prompt_Q6mS8M()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "property": "user.email"
+        }
+      ]
+    }
+  ],
+  "generator": "Cadastro.lg",
+  "recognizer": "Cadastro.lu.qna",
+  "id": "Cadastro"
+}
