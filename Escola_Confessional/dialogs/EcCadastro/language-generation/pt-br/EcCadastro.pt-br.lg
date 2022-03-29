@@ -36,3 +36,10 @@ informações.```
 
 # TextInput_Prompt_Q6mS8M_text()
 - Qual é o e-mail para enviarmos o orçamento?
+# TextInput_InvalidPrompt_Q6mS8M()
+[Activity
+    Text = ${TextInput_InvalidPrompt_Q6mS8M_text()}
+]
+
+# TextInput_InvalidPrompt_Q6mS8M_text()
+- Por favor, informe um e-mail válido.

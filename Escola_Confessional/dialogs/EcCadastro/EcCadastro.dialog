@@ -2,7 +2,7 @@
   "$kind": "Microsoft.AdaptiveDialog",
   "$designer": {
     "id": "TN0TAl",
-    "name": "Cadastro",
+    "name": "EcCadastro",
     "comment": ""
   },
   "autoEndDialog": true,
@@ -30,7 +30,7 @@
           },
           "disabled": false,
           "maxTurnCount": 3,
-          "alwaysPrompt": false,
+          "alwaysPrompt": true,
           "allowInterruptions": true,
           "unrecognizedPrompt": "",
           "invalidPrompt": "",
@@ -44,7 +44,7 @@
           },
           "disabled": false,
           "maxTurnCount": 3,
-          "alwaysPrompt": false,
+          "alwaysPrompt": true,
           "allowInterruptions": true,
           "prompt": "${TextInput_Prompt_N5mqv9()}",
           "unrecognizedPrompt": "",
@@ -58,7 +58,7 @@
           },
           "disabled": false,
           "maxTurnCount": 3,
-          "alwaysPrompt": false,
+          "alwaysPrompt": true,
           "allowInterruptions": true,
           "prompt": "${TextInput_Prompt_QmyvmW()}",
           "unrecognizedPrompt": "",
@@ -72,17 +72,20 @@
           },
           "disabled": false,
           "maxTurnCount": 3,
-          "alwaysPrompt": false,
+          "alwaysPrompt": true,
           "allowInterruptions": true,
           "prompt": "${TextInput_Prompt_Q6mS8M()}",
           "unrecognizedPrompt": "",
-          "invalidPrompt": "",
-          "property": "user.email"
+          "invalidPrompt": "${TextInput_InvalidPrompt_Q6mS8M()}",
+          "property": "user.email",
+          "validations": [
+            "=isMatch(string(this.value), \"^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$\")"
+          ]
         }
       ]
     }
   ],
-  "generator": "Cadastro.lg",
-  "recognizer": "Cadastro.lu.qna",
-  "id": "Cadastro"
+  "generator": "EcCadastro.lg",
+  "recognizer": "EcCadastro.lu.qna",
+  "id": "EcCadastro"
 }

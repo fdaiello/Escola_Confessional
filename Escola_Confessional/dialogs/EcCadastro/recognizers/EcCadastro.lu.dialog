@@ -1,5 +1,5 @@
 {
   "$kind": "Microsoft.MultiLanguageRecognizer",
-  "id": "LUIS_Cadastro",
+  "id": "LUIS_EcCadastro",
   "recognizers": {}
 }

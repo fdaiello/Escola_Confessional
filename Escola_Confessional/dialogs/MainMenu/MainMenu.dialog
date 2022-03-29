@@ -58,10 +58,10 @@
             {
               "$kind": "Microsoft.BeginDialog",
               "$designer": {
-                "id": "wdD7UP"
+                "id": "fvBUDw"
               },
               "activityProcessed": true,
-              "dialog": "Cadastro"
+              "dialog": "EcCadastro"
             }
           ]
         },
@@ -70,7 +70,7 @@
           "$designer": {
             "id": "jFuQAV"
           },
-          "property": "user.atendimento",
+          "property": "user.transferagent",
           "value": "sim"
         }
       ]
