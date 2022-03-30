@@ -35,7 +35,7 @@
           "unrecognizedPrompt": "",
           "invalidPrompt": "",
           "prompt": "${TextInput_Prompt_egT3CS()}",
-          "property": "user.nomedoaluno"
+          "property": "user.nomealuno"
         },
         {
           "$kind": "Microsoft.TextInput",
@@ -81,6 +81,14 @@
           "validations": [
             "=isMatch(string(this.value), \"^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$\")"
           ]
+        },
+        {
+          "$kind": "Microsoft.SetProperty",
+          "$designer": {
+            "id": "wN2Kjq"
+          },
+          "property": "user.tag",
+          "value": "informacoes"
         }
       ]
     }
