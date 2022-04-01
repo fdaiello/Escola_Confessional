@@ -44,7 +44,8 @@
             "Coordenação",
             "Secretaria",
             "Departamento Pessoal",
-            "Compras"
+            "Compras",
+            "Cantina"
           ],
           "property": "dialog.menuChoice"
         },
