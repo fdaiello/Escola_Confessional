@@ -6,8 +6,7 @@
 ]
 
 # TextInput_Prompt_RKnq6a_text()
-- ```Olá! Sou o assistente virtual da ESCOLA CONFESSIONAL.
-Para que possamos dar início no seu atendimento, por favor me diga qual seu nome 🙂?```
+- Qual é o seu nome?
 # SendActivity_Ifrx02()
 [Activity
     Text = ${SendActivity_Ifrx02_text()}
@@ -22,3 +21,21 @@ Para que possamos dar início no seu atendimento, por favor me diga qual seu nom
 
 # SendActivity_doAhNY_text()
 - Ok, cancelando ....
+# SendActivity_9T05Cw()
+[Activity
+    Text = ${SendActivity_9T05Cw_text()}
+]
+
+# SendActivity_9T05Cw_text()
+- ```Olá! 🙂
+Sou o assistente virtual da ESCOLA CONFESSIONAL.```
+# TextInput_InvalidPrompt_RKnq6a()
+[Activity
+    Text = ${TextInput_InvalidPrompt_RKnq6a_text()}
+]
+
+# TextInput_InvalidPrompt_RKnq6a_text()
+- Por favor, qual é o seu nome?
+- Para começar, me diga seu nome?
+- Qual é o seu nome, por favor?
+- Por favor, me diga seu qual é o seu nome?

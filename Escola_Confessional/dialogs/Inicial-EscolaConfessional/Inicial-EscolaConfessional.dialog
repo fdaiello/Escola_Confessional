@@ -17,6 +17,13 @@
       },
       "actions": [
         {
+          "$kind": "Microsoft.SendActivity",
+          "$designer": {
+            "id": "9T05Cw"
+          },
+          "activity": "${SendActivity_9T05Cw()}"
+        },
+        {
           "$kind": "Microsoft.TextInput",
           "$designer": {
             "id": "RKnq6a"
@@ -26,9 +33,12 @@
           "alwaysPrompt": false,
           "allowInterruptions": false,
           "unrecognizedPrompt": "",
-          "invalidPrompt": "",
+          "invalidPrompt": "${TextInput_InvalidPrompt_RKnq6a()}",
           "prompt": "${TextInput_Prompt_RKnq6a()}",
-          "property": "user.name"
+          "property": "user.name",
+          "validations": [
+            "!contains(toLower(this.value),'bom dia') && !contains(toLower(this.value),'boa tarde') && toLower(this.value) != 'oi'"
+          ]
         },
         {
           "$kind": "Microsoft.SendActivity",
