@@ -37,7 +37,10 @@
           "prompt": "${TextInput_Prompt_RKnq6a()}",
           "property": "user.name",
           "validations": [
-            "!contains(toLower(this.value),'bom dia') && !contains(toLower(this.value),'boa tarde') && toLower(this.value) != 'oi'"
+            "!contains(toLower(this.value),'bom dia') && !contains(toLower(this.value),'boa tarde') && !contains(toLower(this.value),'oi ')",
+            "!contains(toLower(this.value),'obrigado') && !contains(toLower(this.value),'pai') && !contains(toLower(this.value),'boa ') && !contains(toLower(this.value),'bom ')",
+            "!contains(toLower(this.value),'esqueceu') && !contains(toLower(this.value),'boa ') && !contains(toLower(this.value),'gostaria')",
+            "!contains(toLower(this.value),'fiquei') && !contains(toLower(this.value),'mensagem') && !contains(toLower(this.value),'contato ')"
           ]
         },
         {
